@@ -1,8 +1,21 @@
-import React from 'react'
+import {BrowserRouter as Router, Routes ,route} from "react-router-dom"
+import SearchBox from "./components/search-box/SearchBox"
 
+import Navbar from"./components/Navbar/Navbar"
 function App() {
   return (
-    <div>app</div>
+  <Router>
+      <div className="sticky-header">
+        <Navbar/>
+        <SearchBox/>
+      </div>
+        
+    <Routes>
+
+
+      
+    </Routes>
+    </Router>
   )
 }
 

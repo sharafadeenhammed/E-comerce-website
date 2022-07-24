@@ -1,0 +1,13 @@
+
+
+
+/* , rgba(183, 155, 113, 0.3) */
+.navbar{
+    background: linear-gradient(90deg ,rgba(40, 131, 161,0.3), rgba(41, 39, 35, 0.9)) no-repeat center center ;
+    height: 100px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px
+}

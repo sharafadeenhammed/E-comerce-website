@@ -1,0 +1,19 @@
+.navlink-container{
+    list-style-type: none;
+    display:flex;
+}
+
+.navlink{
+    color:white;
+    text-decoration:none;
+    padding: 5px;
+    margin: 0px 3px;
+    background-color: rgba(34, 30, 30,0.3);
+    border-radius: 5px;
+    border: 1px rgba(223, 215, 215,0.5) solid;
+    transition:all 0.3s
+}
+
+.navlink:hover{
+    background-color: rgba(29, 31, 32, 0.8);
+}
