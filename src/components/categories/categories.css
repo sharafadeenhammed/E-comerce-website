@@ -1,0 +1,37 @@
+
+
+
+.select-item-box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.select-items{
+    padding:10px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 5px;
+    transition: 0.3s;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+
+.item{
+    padding:10px;
+    color:rgba(1,1,1,0.9);
+    
+}
+.item:hover{
+    background-color: transparent;
+}
+
+.categories-text{
+    color:rgba(1,1,1,0.6);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: bolder;
+}

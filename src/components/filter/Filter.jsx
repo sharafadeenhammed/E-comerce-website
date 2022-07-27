@@ -1,17 +1,21 @@
 import "./filter.css"
 import{FaFilter,} from "react-icons/fa"
+import FilterWindow from "../filterWindow/FilterWindow"
+import {useState} from "react"
 function Filter() {
+  const [isShowWindow, setShowWindow] = useState(false)
  
-  function filter(){
-
+  function filterWindow(){
+    setShowWindow(!isShowWindow)
   }
   
   return (
     <div className="filter-icon-container" >
-      <button className="filter-icon-btn" onClick={filter} >
+      { !isShowWindow ? (<button className="filter-icon-btn" onClick={filterWindow} >
         filter
         <FaFilter className="filter-icon"/>
-      </button>
+      </button>) :
+      < FilterWindow filterWindow={filterWindow} />}
     </div>
   )
 }

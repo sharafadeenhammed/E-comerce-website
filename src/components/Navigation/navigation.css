@@ -17,3 +17,21 @@
 .navlink:hover{
     background-color: rgba(29, 31, 32, 0.8);
 }
+.cart{
+    position: relative;
+}
+.cart-num{
+    position: absolute;
+    background-color:#fff;
+    border-radius: 50%;
+    color: #000;
+    align-items: center;
+    height:23px;
+    width:23px;
+    top:-12px;
+    left:-12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(1,1,1,0.6);
+}

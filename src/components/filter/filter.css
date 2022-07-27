@@ -3,7 +3,8 @@
     margin-left: 5px;
 }
 .filter-icon-container{
-    margin-right:5%
+    margin-right:5%;
+    position:relative;
 }
 .filter-icon-btn{
     display: flex;
