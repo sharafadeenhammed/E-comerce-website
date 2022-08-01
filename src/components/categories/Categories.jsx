@@ -7,7 +7,9 @@ function Categories() {
     <div className="select-item-box" >
          <small className="categories-text">select categories</small>
         <select className="select-items" onChange={categories} name="categories" id="select-box">
-
+          
+            <option className="item" value="all">all categories</option>
+            
             <option className="item" value="phones">phones</option>
 
             <option className="item" value="phoneAccesories">phone accesories</option>
@@ -24,7 +26,7 @@ function Categories() {
 
             <option className="item"  value="iphone">iphone</option>
 
-            <option className="item"  value="android">android phones</option>
+            <option className="item"  value="android">android phones</option> 
 
             <option className="item" value="electricCars">electric cars</option>
 

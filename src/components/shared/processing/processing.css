@@ -1,0 +1,15 @@
+
+.processing-container{
+ position:absolute;
+ top:50%;
+ left:40%;
+ transform: translateX(-50%);
+ transform: translateY(-40%);
+
+
+
+
+}
+.processing{
+    height:13px 
+}

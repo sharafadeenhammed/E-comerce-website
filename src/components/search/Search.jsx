@@ -10,9 +10,9 @@ function Search() {
     <div className='search-container'>
       <form onSubmit={search} >
         <input type="text" className='search-input' placeholder='search items' />
-        <button className='search-btn' type="submit">SEARCH <FaSearch className='search-icon' /></button>
+        <button className='search-btn' type="submit"><span className='search-text'>SEARCH</span> <FaSearch className='search-icon' /></button>
       </form>
-    </div>
+    </div> 
   )
 }
 

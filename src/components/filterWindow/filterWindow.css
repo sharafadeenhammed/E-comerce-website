@@ -10,7 +10,7 @@ ul{
     /* width:1px; */
     margin:20px;
     position:absolute;
-    top:-40px;
+    top:-30px;
     right:-40px;
 }
 
@@ -52,4 +52,36 @@ ul{
 .filter-item-button:hover{
     color:rgba(255,255,255,1);
     background-color:rgba(1,1,1,0.3);
+}
+
+@media screen and (max-width:700px){
+    
+    .filter-items-box{
+        z-index: 100;
+        background-color: rgb(233, 227, 227);
+        padding:5px 10px;
+        border-radius: 10px;
+        width:120px;
+        margin:20px;
+        position:absolute;
+        top:-20px;
+        left:-25px;
+    }
+    
+}
+
+@media screen and (max-width:620px){
+    
+    .filter-items-box{
+        z-index: 100;
+        background-color: rgb(233, 227, 227);
+        padding:5px 10px;
+        border-radius: 10px;
+        /* width:1px; */
+        margin:20px;
+        position:absolute;
+        top:-20px;
+        right:-75px;
+    }
+    
 }

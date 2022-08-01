@@ -6,7 +6,7 @@ import {AnimatePresence, motion} from "framer-motion"
 function SearchBox() {
   return (
     <div className="search-box" >
-       
+        
           <Search/>
           <Categories/>
           <Filter/> 

@@ -11,13 +11,15 @@ function Filter() {
   
   return (
     <div className="filter-icon-container" >
-      { !isShowWindow ? (<button className="filter-icon-btn" onClick={filterWindow} >
+      <button className="filter-icon-btn" onClick={filterWindow} >
         filter
         <FaFilter className="filter-icon"/>
-      </button>) :
-      < FilterWindow filterWindow={filterWindow} />}
+         
+      </button>
+     { isShowWindow ?
+      < FilterWindow filterWindow={filterWindow} />:""}
     </div>
   )
-}
+  }
 
 export default Filter

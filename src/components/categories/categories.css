@@ -35,3 +35,43 @@
     font-size: 10px;
     font-weight: bolder;
 }
+
+@media screen and (max-width:620px){
+    .select-item-box{
+        display: flex;
+        flex-direction: column;
+        width:250px;
+        margin-top:5px;
+        margin-bottom:5px;
+        /* margin: 5px auto; */
+    }
+
+    .categories-text{
+        text-align: left;
+        padding:0px 5px;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    
+    .select-item-box{
+        display: flex;
+        flex-direction: column;
+        width:250px;
+        margin-top:5px;
+        margin-bottom:5px;
+        /* margin: 5px auto; */
+    }
+
+    .categories-text{
+        text-align: left;
+        padding:0px 5px;
+    }
+}
+@media screen and (max-width:338px){
+    
+    .select-item-box{
+        width: 80%;
+    }
+}

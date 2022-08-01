@@ -1,13 +1,11 @@
 
 .search-container{
-    margin-left:5%;
     display: flex;
     flex-wrap: nowrap;
 }
-
+ 
 .search-input{
     outline: none;
-    /* border:1px solid rgba(1,1,1,0.6); */
     padding:10px 5px;
     border-radius:5px 0px 0px 5px;
     color:rgba(1,1,1,0.6);
@@ -34,4 +32,19 @@
 }
 .search-icon{
     margin-left:5px
+}
+.search-text{
+    display: inline-block;
+}
+
+@media screen and (max-width:338px){
+    .search-input{
+        width:70%;
+    }
+    .search-text{
+        display: none;
+    }
+    .search-btn{
+        padding:10 20px;
+    }
 }

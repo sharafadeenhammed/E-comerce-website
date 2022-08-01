@@ -1,5 +1,26 @@
 
 
 .listitems-container{
-    /* padding:20px; */
+    display:grid;
+    grid-gap: 10px;
+    /* align-items: center; */
+    justify-content: center;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.error{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.error-text{
+    background-color: rgba(190, 66, 66, 0.3);
+    padding:10px;
+    border-radius: 5px;
+    color:rgba(214, 60, 60);
+    border:solid 1px rgba(190, 66, 66,0.5)
+    
 }
