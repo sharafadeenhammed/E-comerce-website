@@ -9,28 +9,28 @@
     flex-direction: column;
     align-items: center;
     margin-bottom :20px;
+    box-sizing: border-box;
+    margin-left:auto;
+    margin-right:auto;
     
     
 }
 
 .des-image{
     height:400px;
+    max-width: 100%;
     border-bottom:rgba(135, 113, 23, 0.3) 5px solid;
     border-radius: 5px;
 }
 
 .des-highlight{
     margin-bottom :20px 0px;
-    /* box-sizing: border-box; */
     border-radius: 5px;
     background-color: rgba;
     color:rgba();
     display:flex;
     margin: 0px 5%;
     justify-content: center;
-    /* padding:10px; */
-    /* border: 1px rgba(1,1,1,0.2) solid; */
-    /* background-color: rgba(1,1,1,0.3); */
     color:white;
 }
 
@@ -104,7 +104,7 @@
 .des-description{
     padding:10px;
 
-}
+} 
 
 .des-description article{
     font-size: larger;

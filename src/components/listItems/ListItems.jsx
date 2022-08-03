@@ -8,7 +8,7 @@ function ListItems() {
   const {Loading,shopItems} =  useContext(StoreContext)
   return (
   Loading ? <Loader/> : shopItems.length !== 0 ? (
-    <div className="listitems-container">
+    <div className="listitems-container"> 
       {
         shopItems.map((shopItem,index)=>{
           return(<ListItem key={index} itemData={shopItem}/>)

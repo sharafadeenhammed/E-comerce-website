@@ -1,7 +1,7 @@
 .main-container{
     justify-self: center;
 }
-
+ 
 .list-container{
     justify-self: center;
     background-color: rgba(53, 49, 49, 0.3);
@@ -27,7 +27,35 @@
     background-color: inherit;
 }
 
+.image-tag{
+    position:absolute;
+    top:2px;
+    right: 2px;
+}
+
+.image-tag.available{
+    font-family: monospace;
+    word-spacing: 0px;
+    font-size: 10px;
+    color:rgb(38, 108, 43);
+    background-color: rgba(236, 240, 237);
+    padding:1px;
+    border-radius: 5px;
+    border:1px solid rgba(38, 108, 43,0.5)
+}
+.image-tag.not-available{
+    font-family: monospace;
+    word-spacing: 0px;
+    font-size: 10px;
+    color:rgb(199, 49, 41);
+    background-color: rgba(236, 240, 237);
+    padding:1px;
+    border-radius: 5px;
+    border:1px solid rgba(139, 25, 19,0.5)
+}
+
 .price,.rating,.available{
+    
     color:white;
     font-size: 12px;
     font-weight:bolder;
@@ -48,7 +76,7 @@
     width:100%;
 }
 
-.description-btn{
+.description-btn{ 
     font-size: 13px;
     height: 27px;
     font-weight:bolder;
@@ -86,5 +114,12 @@
 }
 
 .add-to-cart-btn:hover,.description-btn:hover{
-    background-color: rgba(1,1,1,0.7);
+    background-color: rgba(1,1,1,0.7); 
+}
+
+@media screen and (max-width:407px) {
+    .action-box{  
+        padding: 20px 0px 10px 0px;
+        justify-content: space-evenly;
+    }
 }

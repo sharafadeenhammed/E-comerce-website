@@ -4,6 +4,8 @@ import {useEffect ,useState} from "react"
 
 import "./itemDescription.css"
 
+import {FaStar} from "react-icons/fa" 
+
 import Loader from "../shared/loader/Loader";
 
 import ErrorMessage from "../errorMessage/ErrorMessage";
@@ -22,10 +24,7 @@ function ItemDescription() {
         await fetch(`https://fakestoreapi.com/products/${params.id}`)
         .then(res=>res.json())
         .then(data=>{
-            setItemData(data);
-            for(let value in  data){
-            console.log( value,":",data[value]);
-            }
+            setItemData(data); 
         })
         .catch(error=>{
             console.log(error,"reqest failed!!!")
@@ -59,36 +58,37 @@ function ItemDescription() {
             <div className="des-highlight">
                 <div className="des-price">
 
-                        <span >price:</span>
+                        <span >Price:</span>
                     <h4 >
                          ${price}
                     </h4>
                 </div>
                 <div className="des-rating">
-                    <span >rating:</span>
+                    <span >Rating:</span>
                     <h4 >
+                        <FaStar color="rgba(220,50,50)"/>
                          {` ${rating.rate} of 5`}
                     </h4>
                 </div>
                 <div className="des-category">
-                    <span >category:</span>
+                    <span >Category:</span>
                     <h4 >
                          {category}
                     </h4>
                 </div>
                 <div className="des-name">
-                    <span >name:</span>
+                    <span >Name:</span>
                     <h4 >
                          {title}
                     </h4>
                 </div>
                
                 <div className="des-count">
-                   
+                <span >Avalability:</span>
                  {rating.count > 0 ? (
-                    <h3>In Stock</h3>
+                    <h4>In Stock</h4>
                  ): (<>
-                     <h3>Out Of Stock</h3>
+                     <h4>Out Of Stock</h4>
                      <p>(coming soon)</p>
                     </>)}
                    

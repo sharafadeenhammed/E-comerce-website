@@ -9,3 +9,29 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+ 
+
+@media screen and (max-width:1050px) {
+    .listitems-container{        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:772px) {
+    .listitems-container{        
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:592px) {
+    .listitems-container{        
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:407px) {
+    .listitems-container{  
+        display:flex;
+        flex-direction: column;      
+        grid-template-columns: 1fr;
+    }
+}
