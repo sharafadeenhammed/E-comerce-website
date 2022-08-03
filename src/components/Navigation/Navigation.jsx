@@ -1,7 +1,7 @@
 import{Link} from "react-router-dom"
 import "./navigation.css"
 import {useState} from "react"
-import {FaBars, FaSpinner} from "react-icons/fa"
+import {FaBars,FaCartArrowDown} from "react-icons/fa"
 import { func } from "prop-types";
 
 function Navigation() {
@@ -21,8 +21,8 @@ function showNav(){
   
         
         <li >
-          <Link onClick={showNav} id="cart" className="navlink cart"  to="/cart/id">CART <h4 className="cart-num">{cartNum<100? cartNum:"99+"}</h4></Link>
-          </li>
+          <Link onClick={showNav} id="cart" className="navlink cart"  to="/cart/id">CART <FaCartArrowDown/> <h4 className="cart-num">{cartNum<100? cartNum:"99+"}</h4></Link>
+          </li> 
 
           <li>
           <Link onClick={showNav}className="navlink"  to="/profile/id" >PROFILE</Link>

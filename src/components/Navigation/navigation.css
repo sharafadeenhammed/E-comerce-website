@@ -38,6 +38,9 @@
     font-size:12px;
     font-weight: bolder;
 }
+.bars{
+    cursor: pointer;
+}
 
 .sidebar{
     display:none;
@@ -98,6 +101,7 @@
         flex-direction: column;
         justify-content: space-between;
         position: fixed;
+        z-index: 500;
         align-items: center;
         transition: 0.5s;
         top:5px;
@@ -113,11 +117,16 @@
         margin:20px 10px;
     }
 
+    .navlink:hover{
+        background-color: rgb(204, 213, 218);
+        color:#000;
+    }
+
     .sidebar{
         display:block;
         /* position:fixed;
         top:35px;
-        right:40px */
+        right:40px */ 
     }
 
     .set-width{

@@ -1,5 +1,5 @@
 import "./listItem.css"
-import {FaStar,FaStarHalf,FaSta} from "react-icons/fa"
+import {FaStar,FaStarHalf,FaStackExchange,FaCartPlus} from "react-icons/fa"
 import Processing from "../shared/processing/Processing"
 import {Link} from "react-router-dom"
 import {useState} from "react"
@@ -39,9 +39,9 @@ function ListItem({itemData}) {
       <h4 className="rating">rating: {rate} of  {5}</h4>
       <h4 className="available">{count} pieces in stock</h4>
       <div className="action-box">
-        <Link className="description-btn" to="/itemdescription">view</Link>
+        <Link className="description-btn" to={`/itemdescription/${id}`}>View</Link>
         <button className="add-to-cart-btn" onClick={addToCart}>
-          {isProcessing? <Processing/> :"Add To Cart"} 
+          {isProcessing? <Processing/> : ( <><FaCartPlus/> Add To Cart</>)} 
         </button>
       </div>
       

@@ -1,0 +1,30 @@
+
+.cart-btn{
+    position: relative;
+    font-size: 13px;
+    font-weight:bolder;
+    width:100px;
+    height: 30px;
+    color:white;
+    text-decoration: none;
+    background-color: rgba(1,1,1,0.3);
+    padding:5px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px rgba(1,1,1,0.3) solid;
+    transition: background-color 0.3s ,transform 0.2s;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.cart-btn:active{
+    transform:scale(0.9);
+}
+
+.cart-btn:hover{
+    background-color: rgba(1,1,1,0.7);
+}
+
+.cart-btn img{
+    /* height:10px */
+}

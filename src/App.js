@@ -3,12 +3,15 @@ import {BrowserRouter as Router, Routes ,Route} from "react-router-dom"
 import {Storecontext} from "./components/context/storeContext/StoreContext"
 
 import SearchBox from "./components/search-box/SearchBox"
+
+import ItemDescription from "./components/itemDescription/ItemDescription"
+
 import Cart from "./components/cart/Cart"
 
 import Navbar from"./components/Navbar/Navbar"
 
 import ListItems from "./components/listItems/ListItems"
-
+ 
 
 function App() {
 
@@ -31,6 +34,8 @@ function App() {
               <Route path="/cart/:id" element={<Cart/>} />
 
               <Route path="/" element={<ListItems/>}/>
+
+              <Route path="/itemdescription/:id" element={<ItemDescription/>}/>
               
             </Routes>
           </div>
