@@ -11,6 +11,8 @@ import Cart from "./components/cart/Cart"
 import Navbar from"./components/Navbar/Navbar"
 
 import ListItems from "./components/listItems/ListItems"
+
+import NotFound from "./components/pages/notFound/NotFound"
  
 
 function App() {
@@ -26,7 +28,6 @@ function App() {
             </Routes>
           
         </div>
-        {/* <div className="page-content"> */}
 
           <div className="content-container">
             <Routes>
@@ -36,17 +37,21 @@ function App() {
               <Route path="/" element={<ListItems/>}/>
 
               <Route path="/itemdescription/:id" element={<ItemDescription/>}/>
+
+              <Route  path="/*" element={<NotFound/>}/>
               
             </Routes>
+            {/* not found routes */}
+           
+            
           </div>
+          
 
           <div className="footer-container">
             <footer className="footer">
               my footer
             </footer>
           </div>
-
-      {/* </div> */}
       
     </Router>
     </Storecontext>

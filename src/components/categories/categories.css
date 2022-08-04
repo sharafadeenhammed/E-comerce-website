@@ -4,6 +4,7 @@
 .select-item-box{
     display: flex;
     flex-direction: column;
+    cursor:default;
 
 }
 
