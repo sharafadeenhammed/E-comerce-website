@@ -13,6 +13,8 @@ import Navbar from"./components/Navbar/Navbar"
 import ListItems from "./components/listItems/ListItems"
 
 import NotFound from "./components/pages/notFound/NotFound"
+
+import About from "./components/pages/about/About"
  
 
 function App() {
@@ -31,7 +33,8 @@ function App() {
 
           <div className="content-container">
             <Routes>
-              
+            <Route path="/about/*" element={<About/>} />
+
               <Route path="/cart/:id" element={<Cart/>} />
 
               <Route path="/" element={<ListItems/>}/>
