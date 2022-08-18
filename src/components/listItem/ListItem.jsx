@@ -40,8 +40,8 @@ function ListItem({itemData}) {
       </div>
       <h4 className="description">{`${title.substring(0,21)}${title.length>20 && "..."}`}</h4>
       <h4 className="price"> price: ${price}</h4>
-      <h4 className="rating">rating: <FaStar color="rgba(220,50,50)"/>{rate} of  {5}</h4>
-      <h4 className="available">{count} pieces in stock</h4>
+      <h4 className="rating">rating: <FaStar color="rgba(220,50,50)"/> {rate} of  {5}</h4>
+      {/* <h4 className="available">{count} pieces in stock</h4> */}
       <div className="action-box">
         <Link className="description-btn" to={`/itemdescription/${id}`}>View</Link>
         <button className="add-to-cart-btn" onClick={addToCart}>

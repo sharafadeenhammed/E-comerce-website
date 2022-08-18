@@ -20,7 +20,7 @@ function NotFound() {
             <img src={milkyway} alt="milkyWay" />
             
             <div className="rocket">
-                <FaRocket />
+                <FaCompass />
             </div>
         </div>
         <div className="not-found-content">
