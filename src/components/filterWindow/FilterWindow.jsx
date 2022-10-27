@@ -1,15 +1,15 @@
 import "./filterWindow.css"
 function FilterAction({filterWindow}) {
     function setMin(e){
-        console.log("min",e.target.value);
+        // console.log("min",e.target.value);
     }
 
     function setMax(e){
-        console.log("max" ,e.target.value)
+        // console.log("max" ,e.target.value)
     }
 
     function setLocation(e){
-        console.log(e.target.value)
+        // console.log(e.target.value)
 
     }
 
